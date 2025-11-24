@@ -1,0 +1,170 @@
+[
+  {
+    "name": "John Smith",
+    "age": 25,
+    "gender": "\u041c\u0443\u0436\u0441\u043a\u043e\u0439",
+    "height": 183,
+    "weight": 82
+  },
+  {
+    "name": "Elizabeth Buckley",
+    "age": 78,
+    "gender": "\u0416\u0435\u043d\u0441\u043a\u0438\u0439",
+    "height": 189,
+    "weight": 53
+  },
+  {
+    "name": "Zachary Henry",
+    "age": 37,
+    "gender": "\u041c\u0443\u0436\u0441\u043a\u043e\u0439",
+    "height": 197,
+    "weight": 87
+  },
+  {
+    "name": "Daniel Williams",
+    "age": 45,
+    "gender": "\u041c\u0443\u0436\u0441\u043a\u043e\u0439",
+    "height": 152,
+    "weight": 74
+  },
+  {
+    "name": "James Barker",
+    "age": 44,
+    "gender": "\u041c\u0443\u0436\u0441\u043a\u043e\u0439",
+    "height": 173,
+    "weight": 77
+  },
+  {
+    "name": "Melissa Carter",
+    "age": 41,
+    "gender": "\u0416\u0435\u043d\u0441\u043a\u0438\u0439",
+    "height": 166,
+    "weight": 53
+  },
+  {
+    "name": "Lori Ho",
+    "age": 31,
+    "gender": "\u041c\u0443\u0436\u0441\u043a\u043e\u0439",
+    "height": 193,
+    "weight": 90
+  },
+  {
+    "name": "Jessica Jones",
+    "age": 54,
+    "gender": "\u0416\u0435\u043d\u0441\u043a\u0438\u0439",
+    "height": 165,
+    "weight": 70
+  },
+  {
+    "name": "Daniel Vang",
+    "age": 21,
+    "gender": "\u041c\u0443\u0436\u0441\u043a\u043e\u0439",
+    "height": 187,
+    "weight": 50
+  },
+  {
+    "name": "Craig Alvarez",
+    "age": 79,
+    "gender": "\u0416\u0435\u043d\u0441\u043a\u0438\u0439",
+    "height": 154,
+    "weight": 95
+  },
+  {
+    "name": "James Hernandez",
+    "age": 54,
+    "gender": "\u041c\u0443\u0436\u0441\u043a\u043e\u0439",
+    "height": 191,
+    "weight": 77
+  },
+  {
+    "name": "Ashley Abbott",
+    "age": 21,
+    "gender": "\u0416\u0435\u043d\u0441\u043a\u0438\u0439",
+    "height": 188,
+    "weight": 80
+  },
+  {
+    "name": "Brenda Vaughan",
+    "age": 69,
+    "gender": "\u0416\u0435\u043d\u0441\u043a\u0438\u0439",
+    "height": 175,
+    "weight": 92
+  },
+  {
+    "name": "Amanda Day",
+    "age": 57,
+    "gender": "\u0416\u0435\u043d\u0441\u043a\u0438\u0439",
+    "height": 152,
+    "weight": 77
+  },
+  {
+    "name": "Jacob Jackson",
+    "age": 56,
+    "gender": "\u041c\u0443\u0436\u0441\u043a\u043e\u0439",
+    "height": 158,
+    "weight": 61
+  },
+  {
+    "name": "Lisa Henderson",
+    "age": 64,
+    "gender": "\u0416\u0435\u043d\u0441\u043a\u0438\u0439",
+    "height": 151,
+    "weight": 61
+  },
+  {
+    "name": "Candace Silva",
+    "age": 29,
+    "gender": "\u0416\u0435\u043d\u0441\u043a\u0438\u0439",
+    "height": 160,
+    "weight": 66
+  },
+  {
+    "name": "Christopher Osborne",
+    "age": 45,
+    "gender": "\u041c\u0443\u0436\u0441\u043a\u043e\u0439",
+    "height": 168,
+    "weight": 68
+  },
+  {
+    "name": "Charles Morales",
+    "age": 29,
+    "gender": "\u041c\u0443\u0436\u0441\u043a\u043e\u0439",
+    "height": 175,
+    "weight": 60
+  },
+  {
+    "name": "Colin Salas",
+    "age": 30,
+    "gender": "\u0416\u0435\u043d\u0441\u043a\u0438\u0439",
+    "height": 157,
+    "weight": 97
+  },
+  {
+    "name": "Nicholas Walker",
+    "age": 19,
+    "gender": "\u041c\u0443\u0436\u0441\u043a\u043e\u0439",
+    "height": 185,
+    "weight": 62
+  },
+  {
+    "name": "Theresa Horne",
+    "age": 79,
+    "gender": "\u0416\u0435\u043d\u0441\u043a\u0438\u0439",
+    "height": 183,
+    "weight": 87
+  },
+  {
+    "name": "Kelly Gillespie",
+    "age": 20,
+    "gender": "\u0416\u0435\u043d\u0441\u043a\u0438\u0439",
+    "height": 170,
+    "weight": 63
+  },
+  {
+    "name": "Jacob Meyer",
+    "age": 62,
+    "gender": "\u041c\u0443\u0436\u0441\u043a\u043e\u0439",
+    "height": 186,
+    "weight": 59
+  }
+]
