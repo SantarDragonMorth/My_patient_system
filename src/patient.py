@@ -76,10 +76,56 @@ class PatientForm(tk.Toplevel):
         if patient:
             self.fill_form()
     
+    def validate_input(self, name, age, gender, height, weight):
+        """Проверка корректности введенных данных"""
+        errors = []
+        
+        # Проверка ФИО
+        if not name or not name.strip():
+            errors.append("ФИО не может быть пустым")
+        else:
+            # Разделяем ФИО на части и убираем пустые строки
+            name_parts = [part for part in name.strip().split() if part]
+            
+            # Проверяем, что есть минимум 2 части (имя и фамилия)
+            if len(name_parts) < 2:
+                errors.append("ФИО должно содержать имя и фамилию (отчество не обязательно)")
+            else:
+                # Проверяем, что каждая часть состоит только из букв
+                for part in name_parts:
+                    if not part.replace('-', '').isalpha():
+                        errors.append("ФИО должно содержать только буквы и дефисы")
+                        break
+
+        # Проверка возраста
+        if age < 0:
+            errors.append("Возраст не может быть отрицательным")
+        elif age > 120:
+            errors.append("Возраст не может превышать 120 лет")
+        
+        # Проверка пола
+        if gender not in ['Мужской', 'Женский']:
+            errors.append("Пол должен быть 'Мужской' или 'Женский'")
+        
+        # Проверка роста
+        if height < 50:
+            errors.append("Рост не может быть меньше 50 см")
+        elif height > 250:
+            errors.append("Рост не может превышать 250 см")
+        
+        # Проверка веса
+        if weight < 5:
+            errors.append("Вес не может быть меньше 5 кг")
+        elif weight > 300:
+            errors.append("Вес не может превышать 300 кг")
+        
+        return errors
+    
     def on_close(self):
         # Устанавливаем patient в None, если форма закрыта без сохранения
         self.patient = None
         self.destroy()
+
     
     def fill_form(self):
         self.name_entry.delete(0, 'end')
@@ -94,19 +140,26 @@ class PatientForm(tk.Toplevel):
     
     def save(self):
         try:
-            name = self.name_entry.get()
+            name = self.name_entry.get().strip()
             age = int(self.age_spinbox.get())
             gender = self.gender_var.get()
             height = int(self.height_spinbox.get())
             weight = int(self.weight_spinbox.get())
             
-            if not name:
-                raise ValueError("ФИО не может быть пустым")
+            # Валидация данных
+            validation_errors = self.validate_input(name, age, gender, height, weight)
+            
+            if validation_errors:
+                error_message = "Обнаружены ошибки:\n• " + "\n• ".join(validation_errors)
+                messagebox.showerror("Ошибка валидации", error_message)
+                return
             
             self.patient = Patient(name, age, gender, height, weight)
             self.destroy()
+
         except ValueError as e:
-            messagebox.showerror("Ошибка", f"Некорректные данные: {e}")
+            messagebox.showerror("Ошибка",f"Некорректные данные:{e}")
+
 
 class StatisticsWindow(tk.Toplevel):
     def __init__(self, parent, patients):
