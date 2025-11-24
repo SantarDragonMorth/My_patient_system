@@ -5,7 +5,7 @@
 графическим интерфейсом и статистикой.
 """
 
-version = "1.0.0"
-author = "Шабалин Артём"
+__version__ = "1.0.0"
+__author__ = "Шабалин Артём"
 
 from .patient import Patient, PatientForm, StatisticsWindow

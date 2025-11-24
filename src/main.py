@@ -99,7 +99,7 @@ class App:
         
         tk.Button(button_frame, text="Добавить", command=self.add_patient).pack(side='left', padx=5)
         tk.Button(button_frame, text="Редактировать", command=self.edit_patient).pack(side='left', padx=5)
-        tk.Button(button_frame, text="Удалить", command=self.delete_patient).pack(side='left', padx=5)
+        # tk.Button(button_frame, text="Удалить", command=self.delete_patient).pack(side='left', padx=5)
         tk.Button(button_frame, text="Статистика", command=self.show_stats).pack(side='left', padx=5)
         tk.Button(button_frame, text="Созд. данные", command=self.generate_data).pack(side='left', padx=5)
     
@@ -123,18 +123,18 @@ class App:
             self.patients[index] = form.patient
             self.update_table()
     
-    def delete_patient(self):
-        selected = self.tree.selection()
-        if not selected:
-            messagebox.showwarning("Ошибка", "Выберите пациента для удаления")
-            return
+    # def delete_patient(self):
+        # selected = self.tree.selection()
+        # if not selected:
+            # messagebox.showwarning("Ошибка", "Выберите пациента для удаления")
+            # return
         
-        index = self.tree.index(selected[0])
-        patient_name = self.patients[index].name
+        # index = self.tree.index(selected[0])
+        # patient_name = self.patients[index].name
         
-        if messagebox.askyesno("Подтверждение", f"Вы уверены, что хотите удалить пациента {patient_name}?"):
-            del self.patients[index]
-            self.update_table()
+        # if messagebox.askyesno("Подтверждение", f"Вы уверены, что хотите удалить пациента {patient_name}?"):
+            # del self.patients[index]
+            # self.update_table()
     
     def show_stats(self):
         if not self.patients:
